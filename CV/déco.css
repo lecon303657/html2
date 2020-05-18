@@ -1,0 +1,34 @@
+body{
+    background-color: chartreuse;
+    position: absolute;
+}
+
+img{
+    border-radius:10px 0;
+    position: relative;
+}
+
+h2{
+    color: blue;
+    font-family: Arial;
+}
+
+h1{
+    font-weight:bold;
+    color: brown;
+    font-family: Helvetica;
+}
+
+p{
+    font-style: italic;
+}
+
+td{
+    font-size: medium;
+    padding-left: 10px;
+    position:absolute;
+}
+
+th{
+    font-family: 'Courier New', Courier, monospace;
+}

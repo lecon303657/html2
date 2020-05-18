@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    padding:0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h2{
+    letter-spacing: 0.05em;
+    color: rgb(95, 92, 92);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin:2rem 0 2rem 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* -----------------
+---   Navigation 
+-----------------*/
+.nav{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgba(17, 80, 138,0.7);
+    width: 100%;
+}
+.nav .logo{
+    height: 5rem;
+    width: auto;
+}
+.nav .list{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav .list .push{
+    margin-right: 9rem;
+}
+.nav .list li{
+    margin-right: 3rem;
+}
+.nav .list li a:hover{
+    text-decoration: underline;
+    color:rgba(98, 0, 60,0.8);;
+}
+/* -----------------
+---   Header 
+-----------------*/
+.header{
+    background-image: url(image/hero3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    padding:2rem;
+    font-size: 6rem;
+    color: rgb(98, 0, 60);
+    background-color: rgba(255, 255, 255,0.8);
+    text-align: center;
+}
+
+/*************************
+***     Services
+**************************/
+.services{
+    display: flex;
+    flex-direction: column;
+    padding-top:2rem ;
+    min-height: 100vh;
+}
+.services .container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+
+}
+.services .container .service{
+    width: 300px;
+    height: 450px;
+    background-color: rgb(247,247,247);
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.services .container .service img{
+    width: 300px;
+    height: 227px;
+}
+.services .container .service h3{
+    padding: 2rem;
+}
+.services .container .service p{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/*************************
+***     Projects
+**************************/
+
+.projects{
+    background-color: #f4f6f7;
+    padding-top: 2rem;
+}
+.projects .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.project-container img{
+    height: 450px;   
+    margin: 3rem;
+}
+/*************************
+***     About/team pages
+**************************/
+.page-header{
+    min-height: 30vh;
+    background-color: #9cd5d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-header h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+/*************************
+***     team page
+**************************/
+.team{
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.team .profile{
+    text-align: center;
+    color: black;
+    margin: 2rem
+}
+.team .profile img{
+    height: 200px;
+    border: 2px solid rgba(98,0,161,0.5);
+    border-radius: 50%;
+}
+/*************************
+***     About page
+**************************/
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem;
+}
+.about .text-content{
+    padding-right: 2rem;
+    max-width: 600px;
+}
+.about .text-content p{
+    font-size: 1.6rem;
+}
+/*************************
+***     Footer
+**************************/
+.footer{
+    background-color: rgb(44, 131, 212);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
+    border-top: 3px solid black;
+    color: white;
+}
+/**************************
+***   Responsive design ***
+***************************/
+@media screen and (max-width: 600px) {
+    .nav{
+        padding:2rem 0 2rem 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav .list{
+        flex-direction: column;
+    }
+    .nav .list li{
+        margin:unset;
+    }
+    .nav .list .push{
+        margin-right: unset;
+    }
+
+    .header h1{
+        font-size:3rem;
+    }
+
+    .projects .project-container img{
+        height:300px;
+    }
+
+    /***************
+    *** About *******
+    ************/
+    .about{
+        padding:1rem;
+    }
+    .about .text-content{
+        margin-right: 0;
+    }
+    .about img{
+        height: 250px;
+    }
+  }
