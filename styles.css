@@ -127,8 +127,10 @@ a{
 
 }
 .project-container img{
-    height: 450px;   
+    height: 300px;   
     margin: 3rem;
+    display:flex;
+    align-items: center;
 }
 /*************************
 ***     About/team pages
